@@ -1,0 +1,7 @@
+Out of all the Big-Oh running times you have seen so far, what do you
+think are the running times for (write answers with your submission in
+a text file and commit it to Github):
+(a) printReceiptInOrder
+- O(N), runs through the array list (cart) one time
+(b) emptyCartReverseOrder
+- O(N), deletes each index of the array, one at a time

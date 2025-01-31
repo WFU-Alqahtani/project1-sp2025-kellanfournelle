@@ -12,6 +12,7 @@ public class Main {
         }
     }
 
+    //sets up an array for store with 5 items
     public static Item[] setupStore() {
         Item[] store = new Item[5];
 
@@ -24,6 +25,7 @@ public class Main {
         return store;
     }
 
+    //method receives String array for args and Item array for store and creates a cart based on the index from the command line, checks for exceptions and prints if so
     public static ArrayList<Item> createCart(String [] args, Item[] store) {
         ArrayList<Item> cart = new ArrayList<>();
 
@@ -48,6 +50,7 @@ public class Main {
         return cart;
     }
 
+    //method that receives an array list of a cart and prints out a receipt of things in the cart and the subtotal, tax, and total
     public static void printReciptInOrder(ArrayList<Item> cart){
         double subtotal = 0.0;
         System.out.println("Receipt");
@@ -64,6 +67,7 @@ public class Main {
         System.out.printf("(c) Total: %.2f\n", total);
     }
 
+    //method that receives an array list of a cart and removes each Item and prints out when an item is removed
     public static void emptyCartReverseOrder(ArrayList<Item> cart){
         System.out.println("Removing all items in the cart from in \"Last in First Out\" order...");
         while (cart.size() > 0){
